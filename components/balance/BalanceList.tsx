@@ -1,7 +1,8 @@
 import {
     List,
     TextField,
-    TextInput, usePermissions,
+    TextInput,
+    usePermissions,
 } from 'react-admin';
 import * as React from "react";
 import PostListActions from "@/components/ui/PostListActions";

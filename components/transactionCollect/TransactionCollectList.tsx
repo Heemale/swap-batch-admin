@@ -3,7 +3,8 @@ import {
     TextField,
     TextInput,
     SelectField,
-    SelectInput, usePermissions
+    SelectInput,
+    usePermissions
 } from 'react-admin';
 import * as React from "react";
 import {txStatusChoices, txStatusForQuery} from "@/common/constants";
@@ -26,7 +27,7 @@ export const TransactionCollectList = () => {
 
     const {permissions} = usePermissions();
 
-    return(
+    return (
         <List
             filters={postFilters}
             actions={<PostListActions/>}

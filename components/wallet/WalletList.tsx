@@ -2,9 +2,12 @@ import {
     List,
     TextField,
     TextInput,
-    NumberField,
     ReferenceField,
-    usePermissions, TopToolbar, SelectColumnsButton, FilterButton, CreateButton, ExportButton,
+    usePermissions,
+    TopToolbar,
+    SelectColumnsButton,
+    FilterButton,
+    ExportButton,
 } from "react-admin";
 import * as React from "react";
 import {Role} from "@/common/constants";
@@ -40,12 +43,12 @@ export const WalletList = () => {
                 {permissions.group === Role.Super &&
                     <ReferenceField source="admin_id" reference="admins" label="管理员ID"/>
                 }
-                <NumberField source="admin_special_num" label="专用编号"/>
+                <TextField source="admin_special_num" label="专用编号"/>
                 <TextField source="address" label="地址"/>
                 <TextField source="private_key" label="私钥"/>
                 <TextField source="mnemonic" label="助记词"/>
-                <NumberField source="interval_max" label="创建交易间隔最大值（分钟）"/>
-                <NumberField source="interval_min" label="创建交易间隔最小值（分钟）"/>
+                <TextField source="interval_max" label="创建交易间隔最大值（分钟）"/>
+                <TextField source="interval_min" label="创建交易间隔最小值（分钟）"/>
             </MyDatagridConfigurable>
         </List>
     );

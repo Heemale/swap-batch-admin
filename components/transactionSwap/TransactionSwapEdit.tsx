@@ -11,11 +11,11 @@ export const TransactionSwapEdit = () => (
         <SimpleForm>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <TextInput source="id" name="id" disabled fullWidth/>
-                <TextInput source="task.id" name="task.id" label="任务ID" disabled fullWidth/>
-                <TextInput source="wallet.id" name="wallet.id" label="钱包ID" disabled fullWidth/>
-                <TextInput source="wallet.address" name="wallet.address" label="钱包地址" disabled fullWidth/>
-                <NumberInput source="times" name="times" label="第几次循环" disabled fullWidth/>
-                <NumberInput source="interval_num" name="interval_num" label="间隔时间" disabled fullWidth/>
+                <TextInput source="task.id" name="task.id" label="任务ID" fullWidth/>
+                <TextInput source="wallet.id" name="wallet.id" label="钱包ID" fullWidth/>
+                <TextInput source="wallet.address" name="wallet.address" label="钱包地址" fullWidth/>
+                <NumberInput source="times" name="times" label="第几次循环" fullWidth/>
+                <NumberInput source="interval_num" name="interval_num" label="间隔时间" fullWidth/>
                 <MyDateTimePicker source="executetime" label="交易执行时间"/>
                 <MyDateTimePicker source="rangestarttime" label="区间起始时间"/>
                 <MyDateTimePicker source="rangeendtime" label="区间结束时间"/>

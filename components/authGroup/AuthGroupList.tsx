@@ -1,12 +1,14 @@
 import {
-    CreateButton, ExportButton,
+    ExportButton,
     FilterButton,
-    List, NumberField, SelectColumnsButton, SelectField, SelectInput,
-    SimpleList, TextField, TextInput, TopToolbar
+    List,
+    SelectColumnsButton,
+    TextField,
+    TextInput,
+    TopToolbar
 } from 'react-admin';
 import * as React from "react";
 import MyDatagridConfigurable from "@/components/ui/MyDatagridConfigurable";
-import {taskTxStatusForQuery} from "@/common/constants";
 
 const postFilters = [
     <TextInput key="id" name="id" source="id" label="分组ID"/>,

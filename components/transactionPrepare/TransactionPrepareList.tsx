@@ -4,10 +4,11 @@ import {
     TextInput,
     NumberField,
     SelectField,
-    SelectInput, usePermissions,
+    SelectInput,
+    usePermissions,
 } from 'react-admin';
 import * as React from "react";
-import {Role, txStatusChoices, txStatusForQuery} from "@/common/constants";
+import {txStatusChoices, txStatusForQuery} from "@/common/constants";
 import PostListActions from "@/components/ui/PostListActions";
 import MyDatagridConfigurable from "@/components/ui/MyDatagridConfigurable";
 

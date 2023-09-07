@@ -1,4 +1,5 @@
 import {
+    CreateButton,
     ExportButton,
     FilterButton,
     List,
@@ -21,6 +22,7 @@ const PostListActions = () => (
     <TopToolbar>
         <SelectColumnsButton/>
         <FilterButton/>
+        <CreateButton/>
         <ExportButton/>
     </TopToolbar>
 );

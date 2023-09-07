@@ -4,7 +4,12 @@ import {
     TextField,
     SelectField,
     SelectInput,
-    usePermissions, TopToolbar, SelectColumnsButton, FilterButton, CreateButton, ExportButton
+    usePermissions,
+    TopToolbar,
+    SelectColumnsButton,
+    FilterButton,
+    CreateButton,
+    ExportButton
 } from 'react-admin';
 import * as React from 'react';
 import TimeTextField from "@/components/ui/TimeTextField";
@@ -19,7 +24,7 @@ import {
 import MyDatagridConfigurable from "@/components/ui/MyDatagridConfigurable";
 
 const postFilters = [
-    <SelectInput key="status" name="status" source="status" choices={taskTxStatusForQuery}  label="状态"/>
+    <SelectInput key="status" name="status" source="status" choices={taskTxStatusForQuery} label="状态"/>
 ];
 
 const PostListActions = () => (

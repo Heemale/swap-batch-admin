@@ -3,7 +3,8 @@ import {
     SelectField,
     SelectInput,
     TextField,
-    TextInput, usePermissions,
+    TextInput,
+    usePermissions,
 } from 'react-admin';
 import * as React from "react";
 import TimeTextField from "@/components/ui/TimeTextField";

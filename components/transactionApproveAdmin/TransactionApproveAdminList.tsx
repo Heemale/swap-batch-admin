@@ -1,9 +1,9 @@
 import {
     List,
     TextField,
-    TextInput,
     SelectField,
-    SelectInput, usePermissions,
+    SelectInput,
+    usePermissions,
 } from 'react-admin';
 import * as React from "react";
 import {txStatusChoices, txStatusForQuery} from "@/common/constants";

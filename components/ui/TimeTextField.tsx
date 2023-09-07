@@ -3,13 +3,14 @@ import {formatTimestamp} from "@/common/util";
 import * as React from "react";
 
 const TimeTextField = ({source, label}: { source: string, label?: string }) => {
-    const record = useRecordContext();
-    if (!record[source]) {
-        return <span>-</span>;
-    } else {
-        return (<span>{formatTimestamp(record[source])}</span>);
 
-    }
+    const record = useRecordContext();
+
+    const text = record[source] ? formatTimestamp(record[source]) : "-";
+
+    return <span>{text}</span>;
+
 };
+
 
 export default TimeTextField;
