@@ -19,7 +19,7 @@ const MyDateTimePicker = ({source, label}: { source: string, label?: string }) =
     useEffect(() => {
         if (selectedDateTime !== null) {
             // @ts-ignore
-            field.onChange(dateToTimestamp(selectedDateTime?.$d)) // data send back to hook form
+            field.onChange(dateToTimestamp(selectedDateTime?.$d)); // data send back to hook form
         } else {
             field.onChange(null);
         }
